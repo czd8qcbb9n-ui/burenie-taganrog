@@ -1,86 +1,147 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Бурение и Водопровод Владимир</title>
-<style>
-  body {
-    margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
-  }
-  header {
-    background: url('https://oaidalleapiprodscus.blob.core.windows.net/private/org-xxxxxx/user-xxxxxx/img-xxxxxx.png?st=2025-11-09T00%3A00%3A00Z&se=2025-11-10T00%3A00%3A00Z&sp=r&sv=2022-11-02&sr=b&rscd=inline%3Bfilename%3Dburenie-bg.png') center/cover no-repeat;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  header h1 {
-    font-size: 3em;
-    margin-bottom: 0.2em;
-  }
-  header p {
-    font-size: 1.4em;
-    margin: 0.3em 0;
-  }
-  .contact {
-    margin-top: 1.2em;
-    background-color: rgba(255, 215, 0, 0.9);
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: #222;
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  section {
-    padding: 50px 15%;
-    background-color: white;
-  }
-  section h2 {
-    color: #0a3d62;
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  section p {
-    font-size: 1.1em;
-    line-height: 1.6em;
-    color: #444;
-  }
-  footer {
-    background-color: #0a3d62;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бурение скважин в Таганроге — Владимир</title>
+  <style>
+    /* Общие стили */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      background: #f0f4f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Хедер */
+    header {
+      background: linear-gradient(90deg, #004aad, #1e6fff);
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Главная секция */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 15px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      transition: transform 0.3s;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
+    .hero h2 {
+      color: #004aad;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      max-width: 700px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .btn-call {
+      background-color: #ff6b00;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn-call:hover {
+      background-color: #ff8b3d;
+      transform: scale(1.05);
+    }
+
+    /* Контактная секция */
+    .contact {
+      background: #004aad;
+      color: white;
+      padding: 40px 15px;
+      text-align: center;
+      border-radius: 20px 20px 0 0;
+      margin-top: 40px;
+    }
+
+    .contact p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .contact .phone {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    /* Адаптив */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.6em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+
+      .btn-call {
+        font-size: 1em;
+        padding: 12px 25px;
+      }
+
+      .contact .phone {
+        font-size: 1.5em;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Бурение, Водопровод, Канализация</h1>
-  <p>Аккуратное горизонтальное бурение без разрушений — под плиткой, дорожкой и фундаментом</p>
-  <div class="contact">📞 Владимир — 8 904 347 0148</div>
-  <p>🎉 Скидка 10% на стройматериалы!</p>
-</header>
+  <header>
+    Бурение, водопровод и канализация в Таганроге
+  </header>
 
-<section>
-  <h2>Наши услуги</h2>
-  <p>Выполняем бурение под водопровод и канализацию с учётом всех норм и требований. Работаем вручную — без громких машин и лишних повреждений участка. Прокладываем трубы под тротуаром, дорожкой, плиткой или через фундамент, без вскрытия поверхности.</p>
-  <p>Оформляем полную техническую документацию, готовим проект и обеспечиваем сдачу объекта. Качество, аккуратность и честные цены гарантированы.</p>
-</section>
+  <section class="hero">
+    <img src="A_digital_advertisement_for_horizontal_directional.png" alt="Бурение скважин">
+    <h2>Профессиональное бурение без лишней техники</h2>
+    <p>Аккуратная работа даже в труднодоступных местах. Бурим под канализацию, водопровод и электричество. Всё быстро, чисто и надёжно.</p>
+    <a href="tel:+89043470148" class="btn-call">Позвонить Владимиру</a>
+  </section>
 
-<footer>
-  © 2025 Бурение Владимир — Все права защищены
-</footer>
+  <div class="contact">
+    <p>Или звоните прямо сейчас:</p>
+    <p class="phone">8 904 347 0148 — Владимир</p>
+  </div>
 
 </body>
 </html>
